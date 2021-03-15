@@ -1,22 +1,28 @@
-.App {
-  text-align: center;
+.untitled-landing {
   background-color: #282c34;
-  max-height: 100%;
+  min-height: 100vh;
 }
 
-.landing-logo {
+.home-header {
+  padding-top: 30vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-logo {
   background: url('../assets/logo.svg') no-repeat;
-  width: 178px;
+  width: 172px;
   height: 172px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.home-title {
   color: white;
+  font-size: 24px;
 }
+
+
+
+

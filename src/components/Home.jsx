@@ -9,14 +9,13 @@ const Home = ({page, setPage}) => {
   
   return (
     <>
-        <div className="landing-page">
-          <div className='landing-header'>
-            <div className="landing-logo" />
-            <div className="landing-title">{nls.landing_title}</div>
+        <div className="home">
+          <div className="home-header">
+            <div className="home-logo" />
+            <div className="home-title">{nls.landing_title}</div>
           </div>
+          <div></div>
         </div>
-      {page === "about" &&
-        <About page={page} setPage={setPage}/>}
     </>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import pageTags from '../utils/constants';
+import { pageTags } from '../utils/constants';
 import Home from './Home';
 import About from './About';
 import MyCat from './MyCat';
@@ -7,6 +7,7 @@ import Games from './Games';
 import Contact from './Contact';
 
 import '../sass/landingPage.css';
+import ErrorPage from './ErrorPage';
 
 const LandingPage = () => {
 
@@ -16,7 +17,7 @@ const LandingPage = () => {
     <>
       <div className="untitled-landing">
         {page === pageTags.error &&
-          <Error page={page} setPage={setPage} />}
+          <ErrorPage />}
         {page === pageTags.home &&
           <Home page={page} setPage={setPage} />}
         {page === pageTags.about &&
