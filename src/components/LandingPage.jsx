@@ -17,10 +17,10 @@ const LandingPage = () => {
       <div className="untitled-landing">
         {page === pageTags.error && <ErrorPage />}
         {page === pageTags.home && <Home page={page} setPage={setPage} />}
-        {page === pageTags.about && <About page={page} setPage={setPage} />}
-        {page === pageTags.cat && <MyCat page={page} setPage={setPage} />}
-        {page === pageTags.games && <Games page={page} setPage={setPage} />}
-        {page === pageTags.contact && <Contact page={page} setPage={setPage} />}
+        {page === pageTags.about && <About setPage={setPage} />}
+        {page === pageTags.cat && <MyCat setPage={setPage} />}
+        {page === pageTags.games && <Games setPage={setPage} />}
+        {page === pageTags.contact && <Contact setPage={setPage} />}
       </div>
     </>
   );

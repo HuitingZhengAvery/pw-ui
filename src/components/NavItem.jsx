@@ -1,20 +1,15 @@
 import React, { useCallback } from "react";
-import nls from "../nls/Home.json";
 
-const NavItem = ({ setPage }) => {
-  const handleNavOnclick = useCallback((pageTag) => {
-    setPage(pageTag);
-  });
+const NavItem = ({ targetPage, setPage }) => {
+  const handleOnClick = useCallback(() => {
+    setPage(targetPage);
+  }, [setPage]);
 
   return (
     <>
-      <div className="home">
-        <div className="home-header">
-          <div className="home-logo" />
-          <div className="home-title">{nls.landing_title}</div>
-        </div>
-        <div className="navigation"></div>
-      </div>
+      <button className="navigation-item" onClick={handleOnClick}>
+        {targetPage}
+      </button>
     </>
   );
 };
