@@ -1,6 +1,7 @@
 .untitled-landing {
   background-color: #282c34;
   min-height: 100vh;
+  font-family: "Calibri";
 }
 
 .home-header {
@@ -13,7 +14,7 @@
 }
 
 .home-logo {
-  background: url('../assets/logo.svg') no-repeat;
+  background: url("../assets/logo.svg") no-repeat;
   width: 172px;
   height: 172px;
 }
@@ -22,7 +23,3 @@
   color: white;
   font-size: 24px;
 }
-
-
-
-
