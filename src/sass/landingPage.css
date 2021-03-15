@@ -5,7 +5,7 @@
 }
 
 .landing-logo {
-  background: url('./assets/logo.svg') no-repeat;
+  background: url('../assets/logo.svg') no-repeat;
   width: 178px;
   height: 172px;
 }

@@ -1,15 +1,35 @@
+import React, { useState } from 'react';
+import pageTags from '../utils/constants';
+import Home from './Home';
+import About from './About';
+import MyCat from './MyCat';
+import Games from './Games';
+import Contact from './Contact';
 
-import './App.css';
+import '../sass/landingPage.css';
 
-function App() {
+const LandingPage = () => {
+
+  const [page, setPage] = useState(pageTags.home);
+  
   return (
-    <div className="landing-page">
-      <div className='landing-header'>
-        <div className="landing-logo" />
-        <div className="landing-title">WELCOME TO AVERY'S UNTITLED</div>
+    <>
+      <div className="untitled-landing">
+        {page === pageTags.error &&
+          <Error page={page} setPage={setPage} />}
+        {page === pageTags.home &&
+          <Home page={page} setPage={setPage} />}
+        {page === pageTags.about &&
+          <About page={page} setPage={setPage}/>}
+        {page === pageTags.cat &&
+          <MyCat page={page} setPage={setPage}/>}
+        {page === pageTags.games &&
+          <Games page={page} setPage={setPage}/>}
+        {page === pageTags.contact &&
+          <Contact page={page} setPage={setPage}/>}
       </div>
-    </div>
+    </>
   );
 }
 
-export default App;
+export default LandingPage;
