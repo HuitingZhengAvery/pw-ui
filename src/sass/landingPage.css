@@ -1,7 +1,8 @@
 .untitled-landing {
   background-color: #282c34;
   min-height: 100vh;
-  font-family: "Calibri";
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .home-header {
@@ -20,6 +21,30 @@
 }
 
 .home-title {
-  color: white;
   font-size: 24px;
 }
+
+.navigation {
+  padding-top: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation-item {
+  background-color: #282c34;
+  color: white;
+  border: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  font-weight: 350;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+button.navigation-item:hover {
+  background-color: rgb(209, 157, 157);
+  color: #282c34;
+  border-radius: 5px;
+}
+

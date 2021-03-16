@@ -4,6 +4,7 @@ import NavItem from './NavItem';
 import { pageTags } from '../utils/constants';
 
 const NAV_STARTING_POINT = 2;
+
 const Home = ({ setPage }) => {
 
   let navItems = Object.entries(pageTags).slice(NAV_STARTING_POINT).map(entry => entry[1]);

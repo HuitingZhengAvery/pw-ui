@@ -9,7 +9,9 @@ const About = ({setPage}) => {
   
   return (
     <>
-    <button onClick={handleOnclick}>swap</button>
+    <div>
+      about
+    </div>
     </>
   );
 }

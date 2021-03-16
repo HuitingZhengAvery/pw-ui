@@ -1,8 +1,8 @@
 export const pageTags = {
     error: "Error",
     home: "Home",
-    about: "About",
-    cat: "My Cat",
-    games: "Games",
-    contact: "Ask Me Anything"
+    about: "ABOUT",
+    cat: "MY CAT",
+    games: "GAMES",
+    contact: "ASK ME ANYTHING"
 }
