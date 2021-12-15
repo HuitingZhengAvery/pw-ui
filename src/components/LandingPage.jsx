@@ -3,7 +3,7 @@ import { pageTags } from "../utils/constants";
 import Home from "./Home";
 import About from "./About";
 import MyCat from "./MyCat";
-import Games from "./Games";
+import Blogs from "./Blogs";
 import Contact from "./Contact";
 
 import "../sass/landingPage.css";
@@ -19,7 +19,7 @@ const LandingPage = () => {
         {page === pageTags.home && <Home page={page} setPage={setPage} />}
         {page === pageTags.about && <About setPage={setPage} />}
         {page === pageTags.cat && <MyCat setPage={setPage} />}
-        {page === pageTags.games && <Games setPage={setPage} />}
+        {page === pageTags.games && <Blogs setPage={setPage} />}
         {page === pageTags.contact && <Contact setPage={setPage} />}
       </div>
     </>

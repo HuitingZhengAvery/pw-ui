@@ -1,7 +1,7 @@
 import React, {useCallback, useState} from 'react';
 import '../sass/landingPage.css';
 
-const About = ({setPage}) => {
+const Blogs = ({setPage}) => {
 
   const handleOnclick = useCallback(() => {
     setPage('landing');
@@ -16,4 +16,4 @@ const About = ({setPage}) => {
   );
 }
 
-export default About;
+export default Blogs;
